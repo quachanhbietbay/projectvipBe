@@ -15,9 +15,7 @@ const app = express()
 app.use(express.json())
 const PORT = process.env.PORT || 8000;
 app.use(cors({
-    origin: ['http://localhost:5173',
-        'https://projectvip.onrender.com'
-    ],
+    origin:true,
     credentials: true
 }))
 
